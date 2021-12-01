@@ -11,4 +11,6 @@ package peertopeerchat;
  */
 public class myServer {
     //deve ricevere il pacc tramite threadAscolto e mette quello che ha ricevuto in una list probabile datiCondivisi
+    //edit non credo serva...
+    
 }
