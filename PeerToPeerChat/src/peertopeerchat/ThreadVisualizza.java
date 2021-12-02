@@ -11,4 +11,5 @@ package peertopeerchat;
  */
 public class ThreadVisualizza {
     //prende da qualcuno i dati nella lista e li visualizza
+    
 }

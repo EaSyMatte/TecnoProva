@@ -23,8 +23,6 @@ public class ThreadGrafica extends Thread{
     @Override
     public void run() {
         int i=0;
-        String ip = dati.frame.getTXTIP();
-        dati.setIP(ip);
         while(true)
         {
             i++;

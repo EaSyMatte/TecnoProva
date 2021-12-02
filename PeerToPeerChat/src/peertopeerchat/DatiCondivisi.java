@@ -19,12 +19,13 @@ import java.util.List;
  * @author elli_matteo
  */
 public class DatiCondivisi {
-    //va beh questi sono i dati niente da dire   
+    //va beh questi sono i dati niente da dire  
+    String nomeMittente="";
     DatagramSocket Server;
     DatagramPacket p;
     String[] campi;
     myFrame frame;
-    int porta=0;
+    //int porta=0;
     String ip ="";
     List<String> listaRicevi = new ArrayList<String>();
     List<String> listaInvia = new ArrayList<String>();
@@ -33,19 +34,23 @@ public class DatiCondivisi {
         //boh
     }
     
+    public void setNomeMittente(String s){
+        nomeMittente = s;
+    }
+    
     public void setServer() throws SocketException{
         //Server = new DatagramSocket(666); 
         InetSocketAddress address = new InetSocketAddress(getIP(), 12345);
         Server.bind(address);
     }
     
-    public void setPorta(int p){
+    /*public void setPorta(int p){
         porta = p;
     }
     
     public int getPorta(){
         return porta;
-    }
+    }*/
     
     public DatagramSocket getServer(){
         return Server;
